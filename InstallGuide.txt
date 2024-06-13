@@ -1,0 +1,21 @@
+参考： https://github.com/ben0oil1/GPT-SoVITS-Server/blob/main/On-Termux-Ubuntu.md
+
+1. git clone 
+
+git clone git@github.com:ben0oil1/GPT-SoVITS-Server.git
+
+2. apt 安装依赖
+python3.10
+ sudo apt install libsndfile
+
+3. 创建conda环境（python=3.10），启用虚拟环境
+
+ conda create -n gpt_sovits_server python=3.10 
+
+ conda activate gpt_sovits_server
+ 
+4. pip install依赖包
+
+ pip3 install -r requirements.txt
+
+5. 下载pretrained models 和 sovit/gpt models等，更新config.json

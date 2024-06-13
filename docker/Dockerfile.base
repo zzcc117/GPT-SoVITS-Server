@@ -1,0 +1,14 @@
+FROM registry.cn-shanghai.aliyuncs.com/doraemon_hub/ai_dev_base:ubuntu20.04-cpu-py310-transformers4.32.0-pytorch2.0.0
+
+COPY sources.list /etc/apt/
+
+#安装libsndfile
+
+RUN sudo apt install libsndfile
+
+
+COPY pip.conf /root/.pip/
+
+COPY requirements.txt /tmp
+
+RUN pip install  -r  /tmp/requirements.txt
