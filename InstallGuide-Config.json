@@ -1,10 +1,10 @@
 {
     "cnhubert_path":"./pretrained/chinese-hubert-base",
-    "bert_path":"./pretrained/chinese-roberta-wwm-ext-large",                                                       
+    "bert_path":"./pretrained/chinese-roberta-wwm-ext-large",
     "sovits_path":"./models/dayu/dayu_e8_s160.pth",
-    "gpt_path":"./models/dayu/dayu-e15.ckpt",                                                                     
+    "gpt_path":"./models/dayu/dayu-e15.ckpt",
     "default_refer_path":"./models/dayu/audios/1.MP3_0000331840_0000454080.wav",
     "default_refer_text":"首先，自查一下自己的生活习惯，规律，合理搭配。",
     "default_refer_language":"zh",
     "is_half":false
-}             
+}

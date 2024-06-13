@@ -3,9 +3,7 @@ FROM registry.cn-shanghai.aliyuncs.com/doraemon_hub/ai_dev_base:ubuntu20.04-cpu-
 COPY sources.list /etc/apt/
 
 #安装libsndfile
-
-RUN sudo apt install libsndfile
-
+RUN apt-get update && apt-get install -y libsndfile1
 
 COPY pip.conf /root/.pip/
 
