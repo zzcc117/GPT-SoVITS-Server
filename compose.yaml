@@ -1,0 +1,7 @@
+services:
+  tts:
+    image: registry.cn-shanghai.aliyuncs.com/doraemon_hub/gptsovit_server:latest
+    working_dir: /gptsovit_server
+    command: python server.py
+    ports:
+      - "8080:8080"
